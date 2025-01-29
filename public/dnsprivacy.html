@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Centre of Excellence in DNS Security</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <div id="header">
+        <!-- Inner -->
+        <div class="inner">
+          <header>
+            <h1>
+              <a href="/" id="logo"
+                >Centre of Excellence in DNS Security (CoE-DNS)</a
+              >
+            </h1>
+          </header>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#main">The Problem</a></li>
+            <li><a href="#solution">Solutions</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Main -->
+      <div class="wrapper style1">
+        <div class="container">
+          <article id="main" class="special">
+            <header>
+              <h2><a>DNS Privacy</a></h2>
+              <br />
+            </header>
+            <a class="image featured"
+              ><img src="assets/images/dnsprivacy.png" alt=""
+            /></a>
+            <p>
+              A key function of the DNS is to map human readable names 
+              (e.g. www.cdac.in) to IP addresses that requires to connect 
+              to a particular web site. As the data in the DNS is public, 
+              individual transactions made by an end user should not be public. 
+              However, DNS queries are sent in clear text (using UDP or TCP) 
+              which means passive eavesdroppers can observe all the DNS lookups performed.
+            </p>
+            <hr/>
+            <br/>
+            <div class="row">
+			<article class="col-6 col-12-mobile special">
+              <a class="image featured"
+                ><img src="assets/images/dnstls.jpg" alt="" height="400" width="500"
+              /></a>
+            </article>
+
+            <article id="solution" class="col-6 col-12-mobile special">
+              <section >
+              <header>
+                <h3>DNS-OVER-TLS</h3>
+              </header>
+              </section>
+			  <p>
+		     One proposed solution is to change DNS to use TLS to send queries, 
+             i.e. DNS_OVER_TLS. TLS is an encrypted protocol which will prevent 
+             passive reconnaissance of the network revealing users' DNS queries. 
+             This will also allow users to validate the server they choose for 
+             their DNS service to make sure that they are using a provider who 
+             has a good privacy policy for how they handle the user data.  
+			  </p>
+            </article>
+          </div>
+          <div class="row">
+			<article class="col-6 col-12-mobile special">
+              <a class="image featured"
+                ><img src="assets/images/dnspriv.PNG" alt="" height="400" width="500"
+              /></a>
+            </article>
+
+            <article class="col-6 col-12-mobile special">
+              <section>
+              <header>
+                <h3>QNAME minimization</h3>
+              </header>
+              </section>
+			  <p>
+		     QNAME minimization (query name minimization) is a way to resolve domain 
+             names without having to send the full request to every authority in the chain.<br/>
+             For example, if we are searching for www.cdac.in, we are having three authorities, 
+             Root server who has .in, TLD has cdac.in, and sTLD has www.cdac.in. 
+             Then we have to ask Root server for .in, TLD for cdac.in and sTLD for www.cdac.in, 
+             Instead of leaking the full www.cdac.in to every authority.   
+			  </p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+                 <!-- Copyright -->
+              <div class="copyright">
+                <ul class="menu">
+                  <li>&copy; C-DAC, Bangalore.</li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

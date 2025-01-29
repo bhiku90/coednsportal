@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Centre of Excellence in DNS Security</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <div id="header">
+        <!-- Inner -->
+        <div class="inner">
+          <header>
+            <h1>
+              <a href="/" id="logo"
+                >Centre of Excellence in DNS Security (CoE-DNS)</a
+              >
+            </h1>
+          </header>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#main">Understanding DNS</a></li>
+            <li><a href="#DNSRoot">DNS Root Server</a></li>
+            <li><a href="#attacks">Attacks on DNS</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Main -->
+      <div class="wrapper style1">
+        <div class="container">
+          <article id="main" class="special">
+            <header>
+              <h2><a>Domain Name System</a></h2>
+              <br />
+            </header>
+            <a class="image featured"
+              ><img src="assets/images/DomainNameSystem.png" alt=""
+            /></a>
+            <p>
+              An application on the Internet that translates domain names to IP
+              addresses and vice-versa. In simple words, The Domain Name System
+              (DNS) is a directory lookup service that provides a mapping
+              between the name of a host on the Internet and its numerical
+              internet address. DNS is comprised of 4 elements:
+            </p>
+            <section>
+              <header>
+                <h3>Resource Records:</h3>
+              </header>
+              <p>
+                The DNS database is a collection of resource record organized
+                into a distributed database. It contains the information like IP
+                address, name servers for this domain name.
+              </p>
+              <header>
+                <h3>Name Servers:</h3>
+              </header>
+              <p>
+                Name Servers are server programs that hold information about a
+                portion of the domain-name tree structure and the associated
+                RRs.
+              </p>
+              <header>
+                <h3>Resolvers:</h3>
+              </header>
+              <p>
+                Resolvers are programs that extract information from name
+                servers in response to client request. A typical client request
+                is for an IP address corresponding to a given domain name.
+              </p>
+              <header>
+                <h3>Domain Name System Security Extensions (DNSSEC):</h3>
+              </header>
+              <p>
+                It is used by several protocols that provide e-mail security. It
+                provides end-to-end protection through the use of digital
+                signature. DNSSEC protects DNS clients from accepting forged DNS
+                RRs. It protects these clients by using Digital Signatures to
+                provide:<br />
+                Data origin authentication to ensure that a RR has originated
+                from the content of a RR has not been modified.<br />
+                Data Integrity verification to ensure that the content of a RR
+                has not been modified.
+              </p>
+            </section>
+          </article>
+          <hr />
+          <article id="DNSRoot" class="special">
+            <header>
+              <h2><a>DNS Root Servers</a></h2>
+              <br />
+            </header>
+			<section>
+            <p>
+              Root Zone File is published by 13 root servers named A to M,
+              operated by various operators;<br />
+              13 because of logical limitations – max packet size in UDP in 512
+              bytes;<br />
+              Replicated; 374 instances of same are available<br />
+              Each root server is a copy and none of them are special than
+              others; so the number 13 is only notional<br />
+              India has replicas of 3 root servers; I root at Mumbai, K root at
+              Delhi, and F root at Chennai
+            </p>
+            <header>
+              <h3>Root Zone File</h3>
+            </header>
+            <p>
+              Root name server uses this file (200 KB) to respond to queries,
+              Contains names and IP addresses of authoritative DNS servers for
+              all TLDs, ccTLD. Any changes to root zone file is requested by
+              ICANN and then approved by Department of Commerce. US Department
+              of Commerce has full authority; while ICANN is the root zone
+              operator and Verisign is the root zone maintainer.<b> ICANN </b>is
+              a public-benefit non-profit organization responsible for
+              coordination of the Internet’s Global Domain Name System.
+            </p>
+          </article>
+          <div class="row">
+            <article class="col-6 col-12-mobile special">
+              <a class="image featured"
+                ><img src="assets/images/LORS.jpg" alt=""
+              /></a>
+              <header>
+                <h3><a href="#">Locations of Root Servers</a></h3>
+              </header>
+              <p></p>
+            </article>
+            <article class="col-6 col-12-mobile special">
+              <a class="image featured"
+                ><img src="assets/images/RORS.png" alt="" height="387"
+              /></a>
+              <header>
+                <h3><a href="#">Replicas of Root Servers</a></h3>
+              </header>
+			  </section>
+            </article>
+          </div>
+		  <hr/>
+		  <article id="attacks" class="special">
+            <header>
+              <h2><a>Attacks on DNS</a></h2>
+              <br />
+            </header>
+			<section>
+			<header>
+              <h3>Fast Flux Botnet Attacks</h3>
+            </header>
+            <p>
+            Fast Flux is a DNS technique used by botnets to hide various types
+			of malicious activities (such as phishing, web proxying, malware delivery,
+			and malware communication) behind an ever-changing network of compromised
+			hosts acting as proxies. Fast Flux network is mostly used to make
+			communication between malware and its command and control server. 
+            </p>
+            <header>
+              <h3>DNS Pharming / Cache Poisoning</h3>
+            </header>
+            <p>
+            In DNS pharming attacker hacks into the DNS server and changes the 
+			IP address for www.xyz.com to IP of www.xyz1.com (Fake page). 
+			So if the user enters the URL in address bar, the computer queries
+		    the DNS server for the IP address of www.xyz.com. Since the DNS server
+			has already been poisoned by the attacker, it returns the IP address of www.xyz1.com (fake page).
+            </p>
+			</section>
+			<div class="row">
+			<article class="col-6 col-12-mobile special">
+              <a class="image featured"
+                ><img src="assets/images/dnssec.PNG" alt=""
+              /></a>
+            </article>
+
+            <article class="col-6 col-12-mobile special">
+              <section>
+              <header>
+                <h3>Overcome the attacks on DNS using DNSSEC</h3>
+              </header>
+              </section>
+			  <p>
+		      DNSSEC uses Public Key Cryptography and digital signatures to provide:
+              Data Origin Authentication-Did the DNS reply really come from the .com zone?
+              Data Integrity-Did an attacker modify the data in the response, since it was signed?
+              So, it provides protection against (corruption) spoofing of DNS Data.  
+			  </p>
+            </article>
+          </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+                 <!-- Copyright -->
+              <div class="copyright">
+                <ul class="menu">
+                  <li>&copy; C-DAC, Bangalore.</li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

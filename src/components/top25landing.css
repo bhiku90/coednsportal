@@ -1,0 +1,239 @@
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"); */
+
+#top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(315deg, #22c1c3 , #fdbb2d);
+    font-family: "Poppins", sans-serif;
+}
+
+.container1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px 20px;
+    padding: 150px 100px;
+    
+}
+
+.container1 .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 330px;
+    max-width: 100%;
+    height: 380px;
+    /* background: white; */
+    background-color: #ffcfdf;
+    background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+    border-radius: 25px;
+    transition: 0.5s;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+}
+
+.container1 .card:hover {
+    height: 400px;
+}
+
+.container1 .card .img-box {
+    position: absolute;
+    top: 40px;
+    width: 60%;
+    height: 50%;
+    /* background: #333; */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container1 .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    /* box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2); */
+}
+
+.container1 .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container1 .card .content {
+    position: absolute;
+    top: 260px;
+    width: 100%;
+    height: 60px;
+    padding: 20 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container1 .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.container1 .card .content h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #d60707;
+}
+
+.container1 .card .content p {
+    color: #333;
+}
+
+.container1 .card .content a {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    width: 140px;
+}
+
+.container1 .card .content a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .container1 .card {
+        width: 330px;
+        border-radius: 15px;
+    }
+
+    .container1 .card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .container1 .card .content p {
+        font-size: 0.8rem;
+    }
+
+    .container1 .card .content a :not([disabled]):focus{
+        font-size: 0.9rem;
+        box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+    }
+    .container1 .card .content a :not([disabled]):hover{
+        font-size: 0.9rem;
+        box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+    }
+}
+
+  
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/SourceSans3-Light.ttf') format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/SourceSans3-LightItalic.ttf') format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/SourceSans3-Regular.ttf') format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/SourceSans3-Italic.ttf') format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/SourceSans3-SemiBold.ttf') format('ttf');
+  }
+
+  /* Define Poppins font faces */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/Poppins-ExtraLight.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/Poppins-Light.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Poppins-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Poppins-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Poppins-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Poppins-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/Poppins-ExtraBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/Poppins-Black.ttf') format('ttf');
+}

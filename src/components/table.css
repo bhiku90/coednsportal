@@ -1,0 +1,41 @@
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* For Domainlookups */
+  #dlookup table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 50%;
+    }
+    #dlookup  th{
+      padding: 20px;
+      border: 1px groove darkgray;
+    }
+    #dlookup  td {
+      padding: 1px;
+      border: 1px groove darkgray;
+      
+    }
+  
+    /* For Nameserver lookups */
+  
+  #nstable table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    #nstable  th{
+      padding: 20px;
+      border: 1px groove darkgray;
+    }
+    #nstable  td {
+      padding: 1px;
+      border: 1px groove darkgray;
+      padding-left: 10px;
+    }
+  
+    
+    

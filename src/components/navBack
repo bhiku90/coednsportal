@@ -1,0 +1,235 @@
+import React, { useState } from "react";
+import LogoBlue from "../images/LogoBlue.png";
+import NIXI from "../images/small-nixi.png";
+
+export const Navigation = ({ routeTool }) => {
+  const [colorChange, setColorchange] = useState(false);
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 150) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeNavbarColor);
+
+  return (
+    <nav
+      id="menu"
+      className={
+        colorChange
+          ? "navbar navbar-default-color navbar-fixed-top"
+          : "navbar-default navbar-fixed-top"
+      }
+    >
+      <div className="container-fluid">
+        <div className="navbar-header">
+          <button
+            type="button"
+            className="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            style={{ border: "hidden" }}
+          >
+            {" "}
+            <span className="sr-only"></span>
+            <span
+              className="icon-bar"
+              style={{ backgroundColor: "#758283" }}
+            ></span>{" "}
+            <span
+              className="icon-bar"
+              style={{ backgroundColor: "#758283" }}
+            ></span>{" "}
+            <span
+              className="icon-bar"
+              style={{ backgroundColor: "#758283" }}
+            ></span>{" "}
+          </button>
+          <a  href="#header" onClick={() => routeTool("")}>
+            <img    src={LogoBlue} alt="DNS logo" width="170" height="60" />
+          </a>
+          {/* <a className="nixi" href="https://nixi.in/" target="_blank">
+              <img src={NIXI} alt="NIXI logo" width="150" height="50" />
+            </a> */}
+        </div>
+
+        <div
+          className="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-1"
+        >
+          <ul className="nav navbar-nav navbar-right">
+            <li>
+              <a
+                href="#about"
+                className="page-scroll"
+                onClick={() => routeTool("")}
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#researchTopics"
+                className="page-scroll"
+                onClick={() => routeTool("")}
+              >
+                Research Topics
+              </a>
+            </li>
+            <li>
+              <a
+                href="#training"
+                className="page-scroll"
+                onClick={() => routeTool("")}
+              >
+                Training
+                {/* <sup className="animate-charcter" style={{marginLeft:"5px"}}>New</sup> */}
+              </a>
+            </li>
+            <li className="dropdown" style={{ overflowX: "initial" }}>
+              <a
+                href="#"
+                className="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                style={{ color: "#FB577C" }}
+              >
+                Tools
+                <b className="caret" style={{ marginLeft: "5px" }}></b>
+              </a>
+              <ul className="dropdown-menu nav">
+                <li>
+                  <a
+                    href="#dnshealth"
+                    onClick={() => routeTool("start1")}
+                    style={{ color: "#555" }}
+                  >
+                    DNS Health Analyzer
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#malicious"
+                    onClick={() => routeTool("start")}
+                    style={{ color: "#555" }}
+                  >
+                    Malicious Domain Checker
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#typo"
+                    onClick={() => routeTool("start2")}
+                    style={{ color: "#555" }}
+                  >
+                    TypoSquatting Checker
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#puny"
+                    onClick={() => routeTool("start3")}
+                    style={{ color: "#555" }}
+                  >
+                    Domain Punycode Identifier
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#punnyconverter"
+                    onClick={() => routeTool("start4")}
+                    style={{ color: "#555" }}
+                  >
+                    Punycode converter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onClick={() => routeTool("start26")}
+                    style={{ color: "#555" }}
+                  >
+                    Health Report of Top Name Server
+                  </a>
+                </li>
+                {/* <li><a href="#" onClick={() => routeTool("start25")} style={{color:"#555"}}>Health Report of Top 25 nameservers accessed across World</a></li> */}
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#pds"
+                className="page-scroll"
+                onClick={() => routeTool("")}
+              >
+                Public DNS Server
+              </a>
+            </li>
+            <li>
+              <a
+                href="#spambox"
+                className="page-scroll"
+                onClick={() => routeTool("")}
+                style={{ color: "#FB577C" }}
+              >
+                Spam Box
+              </a>
+            </li>
+            <li>
+              <a
+                href="#publications"
+                className="page-scroll"
+                onClick={() => routeTool("")}
+              >
+                Publications
+              </a>
+            </li>
+            <li>
+              <a
+                href="#resources"
+                className="page-scroll"
+                onClick={() => routeTool("")}
+                style={{ color: "#FB577C" }}
+              >
+                Resources
+              </a>
+            </li>
+            {/* <li className="page-scroll">
+              <a href="https://www.coednssecurity.in/icire/" onClick={() => routeTool("")}>
+                Conference<sup className="animate-charcter" style={{marginLeft:"5px"}}>New</sup>
+              </a>
+            </li> */}
+            <li>
+              <a href="#login" onClick={() => routeTool("signup")}>
+                Map Visualization
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className="page-scroll"
+                onClick={() => routeTool("")}
+              >
+                Contact Us
+              </a>
+            </li>
+            
+            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 
+          
+            <a href="https://nixi.in/"  className="nixi" target="_blank" style={{marginRight:"10px"}}>
+              <img className="nixi" src= {NIXI} alt="NIXI logo" width="150" height="50" />
+            </a>
+            
+            
+          </ul>
+         
+          
+        </div>
+        
+      </div>
+    </nav>
+  );
+};

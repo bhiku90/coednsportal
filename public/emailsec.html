@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Centre of Excellence in DNS Security</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <div id="header">
+        <!-- Inner -->
+        <div class="inner">
+          <header>
+            <h1>
+              <a href="/" id="logo"
+                >Centre of Excellence in DNS Security (CoE-DNS)</a
+              >
+            </h1>
+          </header>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#main">Introduction</a></li>
+            <li><a href="#components">Components of Email</a></li>
+            <li><a href="#secure">Secure Emailing</a></li>
+            <li><a href="#safeness">Email Safeness Scorer</a></li>
+            <li><a href="assets/zip/Email_Safe_Score_Install.zip">Download Email Safeness Scorer <i class="fa fa-download"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Main -->
+      <div class="wrapper style1">
+        <div class="container">
+          <article id="main" class="special">
+            <header>
+              <h2><a>Email</a></h2>
+              <br />
+            </header>
+            <a class="image featured"
+              ><img src="assets/images/emailSecurity.png" alt=""
+            /></a>
+            <p>
+              Electronic Mail (email or e-mail) is a method of exchanging messages ("mail") between people using electronic devices.
+            </p>
+          </article>
+          <hr />
+          <article id="components" class="special">
+            <header>
+              <h2><a>Components of Email</a></h2>
+              <br />
+            </header>
+			<section>
+                <header>
+              <h3>MUA (Mail User Agent)</h3>
+            </header>
+            <p>
+              An MUA or Mail User Agent is the program that an end user uses to 
+              read and process mail. Typical examples include Mozilla Thunderbird, 
+              Microsoft Outlook, Eudora Mail, Incredimail or Lotus Notes. 
+              Sometimes it is called an email client.
+            </p>
+            <header>
+              <h3>MTA (Mail Transport Agent)</h3>
+            </header>
+            <p>
+              An MTA, or Message Transfer Agent is the software and other systems 
+              that are responsible for sending and receiving mail between systems 
+              such as sendmail, postfix, qmail. That is the only thing MTAs do
+              they send and receive messages between systems. MTAs use the SMTP 
+              (Simple Mail Transfer Protocol) to send and receive messages. 
+            </p>
+            <header>
+              <h3>SMTP (Simple Mail Transport Protocol)</h3>
+            </header>
+            <p>
+              SMTP is part of the application layer of the TCP/IP protocol. 
+              SMTP is a standard communication protocol for sending email 
+              messages on business networks and the Internet. SMTP was originally 
+              developed in the early 1980s and remains one of the most popular 
+              protocols in use worldwide.MUAs and MTAs use this protocol for 
+              sending emails.  
+            </p>
+            <header>
+              <h3>MDA (Mail Delivery Agent)</h3>
+            </header>
+            <p>
+             An MDA is a Mail Delivery Agent. MDAs are the software responsible 
+             for receiving a message from an MTA and arranging for it to be 
+             received by the local system (e.g. delivered to a mailbox). 
+             Any program that actually handles a message for delivery to the 
+             point where it can be read by an email client application can be 
+             considered an MDA. There are two main protocols used for retrieving 
+             email on an MDA:  
+            </p>
+            <ul>
+                <li><b>POP3 (Post Office Protocol):</b>
+                    <p>MUAs use this protocol for receiving their emails from the final server. 
+                        The Post Office Protocol 3 (POP3) is a mail access protocol used by a 
+                        client application to read messages from the mail server. Received 
+                        messages are often deleted from the server. POP supports simple 
+                        download-and-delete requirements for access to remote mailboxes 
+                        (termed mail drop in the POP RFC's).</p>
+                </li>
+                <li><b>IMAP (Internet Message Access Protocol):</b>
+                    <p>MUAs can use this protocol to send and receive emails on the servers. 
+                        The Internet Message Access Protocol (IMAP) provides features to manage 
+                        a mailbox from multiple devices. Small portable devices like smartphones 
+                        are increasingly used to check email while travelling, and to make brief 
+                        replies, larger devices with better keyboard access being used to reply 
+                        at greater length. IMAP shows the headers of messages, the sender and the 
+                        subject and the device needs to request to download specific messages. 
+                        Usually mail is left in folders in the mail server.</p>
+                </li>
+            </ul>
+            </section>
+            <img src="assets/images/email-working.PNG" alt=""
+              />
+          </article>
+          <hr/>
+          <article id="secure" class="special">
+            <header>
+              <h2><a>Secure Emailing - SMTPS</a></h2>
+              <br />
+            </header>
+            <p>
+                SMTPS (Simple Mail Transfer Protocol Secure) is a method for securing SMTP with TLS (transport layer security).
+                It provides authentication of the communication partners, as well as data integrity and confidentiality. 
+            </p>
+			<section>
+                <header>
+              <h3>Need for SMTPS</h3>
+            </header>
+            <p>
+              Because the SMTP standard sends email without using encryption or authentication, 
+              every message that has been sent is exposed to view. This can cause various email 
+              security threats such as: 
+              <ul>
+                  <li><b>Authenticity Related Threats: </b>Results in unauthorized access to an enterprise’s email system.</li>
+                  <li><b>Integrity–related Threats: </b>Results in unauthorized modification of email content.</li>
+                  <li><b>Confidentiality–related Threats: </b>Results in unauthorized disclosure of sensitive information.</li>
+                  <li><b>Availability-related Threats: </b>Prevents end users from being able to send or receive email messages.</li>
+              </ul>
+            </p>
+            <header>
+              <h3>Solutions to Secure Emailing</h3>
+            </header>
+            <p>
+              Client-side solutions such as Secure/Multipurpose Internet Mail Extension 
+              (S/MIME) or pretty good privacy (PGP) can solve this problem, but they 
+              require users’ involvement. A better place to focus security efforts is 
+              on securing SMTP.
+              STARTTLS is the ESMTP keyword used to initiate a secure SMTP connection 
+              between two servers using the Secure Sockets Layer (SSL) (also known as TLS). 
+            </p>
+            <header>
+              <h3>STARTTLS</h3>
+            </header>
+            <p>
+              It is an SMTP security extension. It enables SMTP Client and Server to 
+              negotiate use of Transport Layer Security (TLS).
+              Once the connection has been successfully established all further communication 
+              between the two servers is encrypted. This means that the source and destination 
+              email address and the entire message contents are all encrypted during transfer.   
+            </p>
+            <header>
+              <h3>SMTP MTA-STS</h3>
+            </header>
+            <p>
+             SMTP MTA-STS (SMTP Mail Transfer Agent Strict Transport Security) is a proposed 
+             standard that makes it possible to send downgrade-resistant email over SMTP. 
+             In that sense, it is like an alternative to DANE. It does this by being carried 
+             by the browser Certificate Authority model. SMTP MTA-STS is a mechanism enabling 
+             mail service providers to declare their ability to receive Transport Layer Security 
+             (TLS) secure SMTP connections, and to specify whether sending SMTP servers should 
+             refuse to deliver to MX hosts that do not offer TLS with a trusted server certificate.   
+            </p>
+            </section>
+          </article>
+		  <hr/>
+		  <article id="safeness" class="special">
+            <header>
+              <h2><a>Email Safeness Scorer</a></h2>
+              </header>
+              <br />
+              <p>
+                Email Safeness Scorer: A privacy preserving machine learning based Client-Side 
+                (Mozilla Thunderbird Pugin) to provide safeness score of an email for alerting 
+                the user about possible phishing, scam etc.  
+              </p>
+              <p>
+                The email safeness scorer gives the safeness score of the emails based on its 
+                content, the low safeness score signifies the dubious, scam, phishing, malicious 
+                or spam emails, whereas the high score tells that the email is safe i.e. the email 
+                is free from malicious intentions. Nowadays, emails have become a common means of 
+                sharing information. Malicious users use this medium for sending unsolicited messages 
+                for either advertising their product and services or for enticing gullible users for 
+                sharing their important information. This kind of message is generally referred to as 
+                spams. Spams are undesired emails, which are unsolicited bulk messages sent through 
+                email for advertising, phishing or inflicting malware on the recipient system.  
+              </p>
+            
+			<section>
+			<header>
+              <h3>Types of email Phishing</h3>
+            </header>
+            <ul>
+                <li><b>Deceptive Phishing:</b> This is the most common type of phishing attack wherein 
+                    a cybercriminal impersonates a known popular entity, domain or organization 
+                    in the email and attempt to steal sensitive private information from the victim 
+                    such as login, password, bank account detail, credit card detail, etc. This type 
+                    of attack lacks sophistication as it does not have personalization and customization 
+                    for the individuals. For an example, emails containing Phishing URL is disseminated 
+                    in bulk to large users as a volume of mail is very high the cybercriminal would expect 
+                    that many users will open the emails and visit the malicious URLs or open the infected 
+                    attachments. The idea behind this type of phishing is deception and impersonation. 
+                    This type of email mostly creates panic and urgency for the victims to divulge sensitive 
+                    information. The email subject will be such that it might create urgency such as 
+                    "Your account has been hacked, change your password immediately!", "Your bill is overdue-pay 
+                    immediately of pay fine!" or other similar messages, once a user open such messages or visit 
+                    the URLs the damage is done.
+                </li>
+                <li><b>Spear Phishing:</b> In this type of phishing emails contain an abundance of personalization 
+                    information about the prospective victim. The email might contain the name, company name, 
+                    designation or his friends, colleagues and other social information of the recipient. 
+                    The proliferation of the company website, personal website and social media enables cybercriminals 
+                    to get such details and assist them in forging a very convincing email.
+                </li>
+                <li><b>Whale Phishing: </b>This type of phishing targets business leaders such as CEO of top-level 
+                    management employees to spear phish a "whale", here top-level executive such as CEO. 
+                    The main aim of this type of phishing is to gather confidential information from the CEO 
+                    and impersonate as CEO. This attack can render maximum damage to company financial prospects, 
+                    market value, and reputation.
+                    <br/>
+                    The spam and fraud detection have become a priority for the security of email these days. 
+                    Various algorithms have been devised for detecting spams, while some are successful and effective 
+                    on the other hand others are highly biased and need regular training. We have created a three-layer 
+                    adaptive neural network for deriving the safeness score for the emails, we further devised an 
+                    innovative algorithm to find out the optimized learning rate parameter of Gradient Descent algorithm 
+                    for training the neural networks. We trained the neural network with the dataset containing equal 
+                    numbers of spam and benign emails sad found that the prediction of safeness score to be very accurate 
+                    for the spam emails as compared with the existing approach. We have also developed a plugin for 
+                    Mozilla Thunderbird which would collect the content of the email and send this content to a server 
+                    asynchronously and at server, we have implemented a three-layer neural network (Email Safeness Scorer) 
+                    and also trained it, upon receiving the content the trained spam filter would predict the safeness 
+                    score for the received email and would also return the result to the Mozilla Thunderbird, which the 
+                    plugin would display to the user. The schematic architecture diagram for an email spam filter is given below. 
+                </li>
+            </ul>
+			</section>
+			<div class="row">
+			<article class="col-6 col-12-mobile special">
+              <a class="image featured"
+                ><img src="assets/images/email-safeness-scorer.PNG" alt=""
+              /></a>
+            </article>
+
+            <article class="col-6 col-12-mobile special">
+              <section>
+                  <img src="assets/images/email_score.png" alt="" height="500"
+              />
+              </section>
+            </article>
+          </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+                 <!-- Copyright -->
+              <div class="copyright">
+                <ul class="menu">
+                  <li>&copy; C-DAC, Bangalore.</li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

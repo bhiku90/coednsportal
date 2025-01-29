@@ -1,0 +1,212 @@
+{
+  "Header": {
+    "title": "",
+    "paragraph": "Centre of Excellence in DNS Security (CoE-DNS) is established by C-DAC (Center for Development of Advanced Computing), Bangalore."
+  },
+  "About": {
+    "paragraph": "Centre of Excellence in DNS Security (CoE-DNS) is established by C-DAC (Center for Development of Advanced Computing), Bangalore, under the aegis of the Internet Governance Division of Ministry of Electronics & Information Technology (MeitY), Government of India and sponsored by the National Internet Exchange of India (NIXI)."
+  },
+  "Training": [
+    {
+      "textTitle": "DNS Security and its Concepts",
+      "textDate": " Date: 31st October 2023, Tuesday",
+      "textTime": " Time: 10:00 am to 05:30 pm",
+      "textRegister": "Register at : ",
+      "textSchedule": "Program Schedule",
+      "linkRegister": "https://forms.gle/jUBThjLcb8155ijF8",
+      "img": "img/team/qrcode.png",
+      "pdflink": "DNSTrainingProgram.pdf"
+    },
+    {
+      "text": "DNS Security (Seminar) on 30th March 2024 in association with ISOC, Hyderabad",
+      "link": "dnssecmar2024.html"
+    },
+    {
+      "text": "DNS Security, Threat and Mitigation (Webinar) on 13th February 2024 in association with IRINN",
+      "link": "dnssecfeb2024.html"
+    },
+    {
+      "text": "DNS Security and its Concepts (Hybrid) on 31st October 2023",
+      "link": "dnssecoct2023.html"
+    },
+    {
+      "text": "Internet Security for All (Webinar) on 21st October 2022",
+      "link": "dnssecoct2022.html"
+    },
+    {
+      "text": "DNS Ecosystem and Security Webinar for NFSU, Delhi on 04th May 2022",
+      "link": "dnseco2022.html"
+    },
+    {
+      "text": "A Safe Healthy DNS Ecosystem Webinar IIGF on 23rd December 2021",
+      "link": "dnsdec2021.html"
+    },
+    {
+      "text": "The Roles & Types of DNS Abuse in Cyber Security Webinar organized by NIXI on 1st Novmber 2021",
+      "link": "dnsnov2021.html"
+    },
+    {
+      "text": "DNS Security Webinar 05-06 July 2021",
+      "link": "dnsjuly2021.html"
+    },
+    {
+      "text": "Advanced DNS Security training (online) 24-27 November 2020",
+      "link": "dnsnov2020.html"
+    },
+    {
+      "text": "DNS Security Webinar 29 October 2020",
+      "link": "dnsoct2020.html"
+    },
+    {
+      "text": "DNS Security Webinar 21-22 May 2020",
+      "link": "dnsmay2020.html"
+    },
+    {
+      "text": "DNS Security Workshop 21-22 January 2020",
+      "link": "dnsjan2020.html"
+    },
+    {
+      "text": "DNS Security Workshop 23-24 July 2019",
+      "link": "dnsjul2019.html"
+    }
+  ],
+  "Publications": [
+    {
+      "head": "Blockchain Based Decentralized Technology For Internet Naming Systems",
+      "name": "Apurva Tamhankar, Sunita Dhavale, Arun Mishra, Balaji Rajendran, Gopinath Palaniappan",
+      "publisher": "IEEE Xplore 2023",
+      "doi": "https://doi.org/10.1109/R10-HTC57504.2023.10461759",
+      "issue": "2023 IEEE 11th Region 10 Humanitarian Technology Conference (R10-HTC)",
+      "link": "https://doi.org/10.1109/R10-HTC57504.2023.10461759"
+    },
+    {
+      "head": "A Universal Domain Name Resolution Service- Need and Challenges-study on Blockchain Based Naming Services",
+      "name": "Dr.Balaji Rajendran, Gopinath Palaniappan, Dijesh R, Bindhumadhava B S and Sudarsan S D",
+      "publisher": "IEEE Xplore 2022",
+      "doi": "https://doi.org/10.1109/TENSYMP54529.2022.9864361",
+      "issue": "IEEE Region 10 Symposium(TENSYMP), Mumbai, India, 2022",
+      "link": "https://doi.org/10.1109/TENSYMP54529.2022.9864361"
+    },
+    {
+      "head": "A Quantitative Method for Measuring Health of Authoritative Name Servers",
+      "name": "Sanjay Adiwal, Balaji Rajendran, Pushparaj Shetty D",
+      "publisher": "International Journal of Information Security and Privacy, IGI Global Publishing",
+      "doi": "https://doi.org/10.4018/IJISP.285582",
+      "issue": "16(1), Article: 82, January 2022",
+      "link": "https://www.igi-global.com/article/a-quantitative-method-for-measuring-health-of-authoritative-name-servers/285582"
+    },
+    {
+      "head": "Revisiting the Performance of DNS Queries on a DNS Hierarchy Testbed over Dual-Stack",
+      "name": "Sanjay Adiwal, Balaji Rajendran, Pushparaj Shetty D, Gopinath Palaniappan",
+      "publisher": "The Computer Journal, Oxford University Press",
+      "doi": "https://doi.org/10.1093/comjnl/bxaa143",
+      "issue": "Volume 64, Issue 6, June 2021, Pages: 843 to 859",
+      "link": "https://academic.oup.com/comjnl/article-abstract/64/6/843/6169062"
+    },
+    {
+      "head": "Malicious Domain Detection Using Machine Learning On Domain Name Features, Host-Based Features and Web-Based Features",
+      "name": "Gopinath Palaniappan, Sangeetha S, Balaji Rajendran, Sanjay Adiwal, Shubham Goyal, Bindhumadhava BS",
+      "publisher": "Procedia Computer Science, Elsevier",
+      "doi": "https://doi.org/10.1016/j.procs.2020.04.071",
+      "issue": "June 2020, Pages: 654-661",
+      "link": "https://www.sciencedirect.com/science/article/pii/S1877050920310383"
+    },
+    {
+      "head": "DNS Amplification & DNS Tunneling Attacks Simulation, Detection and Mitigation Approaches",
+      "name": "Sanjay Adiwal, Balaji Rajendran, Pushparaj Shetty D",
+      "publisher": "IEEE Xplore",
+      "doi": "https://doi.org/10.1109/ICICT48043.2020.9112413",
+      "issue": "June 2020",
+      "link": "https://ieeexplore.ieee.org/document/9112413"
+    },
+    {
+      "head": "An Adaptive Neural Network for Email Spam Classification",
+      "name": "Jitendra Kumar, A. Santhanavijayan, Balaji Rajendran, B. S. Bindhumadhava",
+      "publisher": "IEEE-Fifteenth International Conference on Information Processing (ICINPRO), 2019",
+      "isbn": "https://doi.org/10.1109/ICInPro47689.2019.9092278",
+      "issue": "Dec 2019",
+      "link": "https://ieeexplore.ieee.org/document/9092278"
+    },
+    {
+      "head": "Domain Name System (DNS) Security: Attacks Identification and Protection Methods",
+      "name": "Sanjay, Balaji Rajendran and Pushparaj Shetty",
+      "publisher": "",
+      "doi": "https://doi.org/10.1109/ICICT48043.2020.9112413",
+      "issue": "August 2018"
+    },
+    {
+      "head": "An Approach for Determining the Health of the DNS",
+      "name": "Tejaswini Yadav C.Y, Balaji Rajendran and Rajini P",
+      "publisher": "IJCSMC",
+      "doi": "https://doi.org/10.1109/ICICT48043.2020.9112413",
+      "issue": "9, September 2014, Pages: 442-449",
+      "link": "https://www.ijcsmc.com/docs/papers/September2014/V3I9201446.pdf"
+    },
+    {
+      "head": "DNS Security: Need and Role in the Context of Cloud Computing",
+      "name": "C. Aishwarya, Sannidhan M. S. and Balaji Rajendran",
+      "publisher": "IEEE Xplore",
+      "doi": "https://doi.org/10.1109/Eco-friendly.2014.53",
+      "issue": "",
+      "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7208997"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "68, Electronics City, Bengaluru - 560100 Karnataka (India)",
+    "phone": "+91-80-2852-3300, +91-80-2852-2590 ",
+    "email": "rise@cdac.in",
+    "facebook": "https://www.facebook.com/iiref",
+    "twitter": "https://twitter.com/IIRnEF",
+    "youtube": " https://www.youtube.com/channel/UCYcl0BIp3rrOfpS_KlMeuxw"
+  },
+  "ResearchTopics": [
+    {
+      "icon": "fa fa-desktop",
+      "title": "Malicious Domain Detection",
+      "text": "Understanding how to detect Malicious Domains",
+      "link": "maldomain.html"
+    },
+    {
+      "icon": "fa fa-envelope",
+      "title": "Email Security",
+      "text": "Understanding the working of Email system and Email Security",
+      "link": "emailsec.html"
+    }
+  ],
+  "Resources": [
+    {
+      "icon": "fa fa-shield",
+      "title": "DNS Security",
+      "text": "Understanding DNS, Zoning and DNS Security",
+      "link": "dnssec.html"
+    },
+    {
+      "icon": "fa fa-lock",
+      "title": "DNS Privacy",
+      "text": "Are our dns queries private or public?",
+      "link": "dnsprivacy.html"
+    }
+  ]
+}
